@@ -102,8 +102,18 @@
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="3"></textarea>
 									</div>
-									<button class="submitbutton" type="button" onclick="submitalert(Your message has been submitted!)">Submit</button>
 								</div>
+								<!--
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+								--->
+								<button onclick="myFunction()">Submit</button>
+								<script>
+								function myFunction() {
+								  alert("Your message has been submitted!");
+								}
+								</script>
 							</form>
 						</section>
 						<section class="split contact">
