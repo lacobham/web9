@@ -255,6 +255,3 @@
 
 		}
 })(jQuery);
-function submitalert() {
-  alert("Your message has been submitted!");
-}
