@@ -2634,17 +2634,17 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.main {
+		.image.structure {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
 		}
 
-			.image.main:first-child {
+			.image.structure:first-child {
 				margin-top: 0;
 			}
 
-			.image.main img {
+			.image.structure img {
 				width: 100%;
 			}
 
@@ -2654,7 +2654,7 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
-			.image.main {
+			.image.structure {
 				margin: 2rem 0;
 			}
 
@@ -3755,9 +3755,9 @@ input, select, textarea {
 
 		}
 
-/* Main */
+/* structure */
 
-	#main {
+	#structure {
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
@@ -3766,41 +3766,41 @@ input, select, textarea {
 		z-index: 2;
 	}
 
-		#main > * {
+		#structure > * {
 			padding: 4rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
 
-			#main > *:first-child {
+			#structure > *:first-child {
 				border-top: 0;
 			}
 
-		#main > footer {
+		#structure > footer {
 			text-align: center;
 		}
 
-		#main > .post {
+		#structure > .post {
 			padding: 8rem 8rem 6rem 8rem ;
 		}
 
-			#main > .post pageheader.major > .date {
+			#structure > .post pageheader.major > .date {
 				margin-top: -2rem;
 			}
 
-			#main > .post pageheader.major > h1, #main > .post pageheader.major h2 {
+			#structure > .post pageheader.major > h1, #structure > .post pageheader.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
 
-			#main > .post.featured {
+			#structure > .post.featured {
 				text-align: center;
 			}
 
 			@media screen and (max-width: 1280px) {
 
-				#main > .post {
+				#structure > .post {
 					padding: 6rem 4rem 4rem 4rem ;
 				}
 
@@ -3808,16 +3808,16 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#main > .post {
+				#structure > .post {
 					padding: 4rem 2rem 2rem 2rem ;
 				}
 
-					#main > .post pageheader.major > .date {
+					#structure > .post pageheader.major > .date {
 						margin-top: -1rem;
 						margin-bottom: 2rem;
 					}
 
-					#main > .post pageheader.major > h1, #main > .post pageheader.major h2 {
+					#structure > .post pageheader.major > h1, #structure > .post pageheader.major h2 {
 						font-size: 2.5rem;
 						line-height: 1.2;
 						margin: 0 0 1.5rem 0;
@@ -3825,7 +3825,7 @@ input, select, textarea {
 
 			}
 
-		#main > .posts {
+		#structure > .posts {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3843,7 +3843,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
-			#main > .posts > * {
+			#structure > .posts > * {
 				-moz-flex-shrink: 1;
 				-webkit-flex-shrink: 1;
 				-ms-flex-shrink: 1;
@@ -3854,16 +3854,16 @@ input, select, textarea {
 				flex-grow: 0;
 			}
 
-			#main > .posts > * {
+			#structure > .posts > * {
 				width: 50%;
 			}
 
-			#main > .posts > * {
+			#structure > .posts > * {
 				padding: 4rem;
 				width: 50%;
 			}
 
-			#main > .posts > article {
+			#structure > .posts > article {
 				border-color: #eeeeee;
 				border-left-width: 2px;
 				border-style: solid;
@@ -3871,25 +3871,25 @@ input, select, textarea {
 				text-align: center;
 			}
 
-				#main > .posts > article > :last-child {
+				#structure > .posts > article > :last-child {
 					margin-bottom: 0;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				#structure > .posts > article:nth-child(2n - 1) {
 					border-left-width: 0;
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
+				#structure > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				}
 
 			@media screen and (max-width: 980px) {
 
-				#main > .posts > * {
+				#structure > .posts > * {
 					width: 50%;
 				}
 
-				#main > .posts > * {
+				#structure > .posts > * {
 					padding: 2.5rem;
 					width: 50%;
 				}
@@ -3898,32 +3898,32 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#main > .posts > * {
+				#structure > .posts > * {
 					width: 100%;
 				}
 
-				#main > .posts > * {
+				#structure > .posts > * {
 					padding: 2rem;
 					width: 100%;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				#structure > .posts > article:nth-child(2n - 1) {
 					border-left-width: 2px;
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
+				#structure > .posts > article:nth-child(-n + 2) {
 					border-top-width: 2px;
 				}
 
-				#main > .posts > article:nth-child(n) {
+				#structure > .posts > article:nth-child(n) {
 					border-left-width: 0;
 				}
 
-				#main > .posts > article:nth-child(-n + 1) {
+				#structure > .posts > article:nth-child(-n + 1) {
 					border-top-width: 0;
 				}
 
-				#main > .posts > article .image {
+				#structure > .posts > article .image {
 					max-width: 25rem;
 					margin-left: auto;
 					margin-right: auto;
@@ -3933,7 +3933,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#main > * {
+			#structure > * {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
 
@@ -3941,7 +3941,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#main {
+			#structure {
 				width: 100%;
 			}
 
