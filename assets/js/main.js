@@ -257,8 +257,6 @@
 })(jQuery);
 
 // Submit button
-<script>
 function myFunction() {
   alert("Your message has been submitted!");
 }
-</script>
