@@ -325,7 +325,7 @@ input, select, textarea {
 
 /* Row */
 
-	.row {
+	/* .row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
@@ -564,7 +564,8 @@ input, select, textarea {
 
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 3rem;
-				}
+				} 
+                       -->
 
 		@media screen and (max-width: 1680px) {
 
@@ -809,9 +810,9 @@ input, select, textarea {
 							padding-top: 3rem;
 						}
 
-		}
+		}   */
 
-		@media screen and (max-width: 1280px) {
+		/* @media screen and (max-width: 1280px) {
 
 			.row {
 				display: flex;
@@ -2034,11 +2035,11 @@ input, select, textarea {
 							padding-top: 3rem;
 						}
 
-		}
+		} */
 
 /* Box */
 
-	.box {
+	/*.box {
 		border: solid 2px;
 		margin-bottom: 2rem;
 		padding: 1.5rem;
@@ -2058,7 +2059,7 @@ input, select, textarea {
 
 	.box {
 		border-color: #eeeeee;
-	}
+	}  */
 
 /* Button */
 
