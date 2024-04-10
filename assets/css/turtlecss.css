@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, navbar, output, ruby,
+footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, navbar, section {
+footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
@@ -177,7 +177,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin: 0 0 1rem 0;
+		margin: 0 0 2rem 0;
 		font-family: Arial, Helvetica, sans-serif;
 	}
 
@@ -2634,17 +2634,17 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.structure {
+		.image.main {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
 		}
 
-			.image.structure:first-child {
+			.image.main:first-child {
 				margin-top: 0;
 			}
 
-			.image.structure img {
+			.image.main img {
 				width: 100%;
 			}
 
@@ -2654,7 +2654,7 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
-			.image.structure {
+			.image.main {
 				margin: 2rem 0;
 			}
 
@@ -2678,9 +2678,9 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
-/* header */
+/* Actions */
 
-	ul.header {
+	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2691,12 +2691,12 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
-		ul.header li {
+		ul.actions li {
 			padding: 0 0 0 1rem;
 			vertical-align: middle;
 		}
 
-		ul.header.special {
+		ul.actions.special {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
@@ -2705,11 +2705,11 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
-			ul.header.special li:first-child {
+			ul.actions.special li:first-child {
 				padding-left: 0;
 			}
 
-		ul.header.stacked {
+		ul.actions.stacked {
 			-moz-flex-direction: column;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
@@ -2717,19 +2717,19 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
-			ul.header.stacked li {
+			ul.actions.stacked li {
 				padding: 1.3rem 0 0 0;
 			}
 
-				ul.header.stacked li:first-child {
+				ul.actions.stacked li:first-child {
 					padding-top: 0;
 				}
 
-		ul.header.fit {
+		ul.actions.fit {
 			width: calc(100% + 1rem);
 		}
 
-			ul.header.fit li {
+			ul.actions.fit li {
 				-moz-flex-grow: 1;
 				-webkit-flex-grow: 1;
 				-ms-flex-grow: 1;
@@ -2741,17 +2741,17 @@ input, select, textarea {
 				width: 100%;
 			}
 
-				ul.header.fit li > * {
+				ul.actions.fit li > * {
 					width: 100%;
 				}
 
-			ul.header.fit.stacked {
+			ul.actions.fit.stacked {
 				width: 100%;
 			}
 
 		@media screen and (max-width: 480px) {
 
-			ul.header:not(.fixed) {
+			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
@@ -2760,7 +2760,7 @@ input, select, textarea {
 				width: 100% !important;
 			}
 
-				ul.header:not(.fixed) li {
+				ul.actions:not(.fixed) li {
 					-moz-flex-grow: 1;
 					-webkit-flex-grow: 1;
 					-ms-flex-grow: 1;
@@ -2774,27 +2774,27 @@ input, select, textarea {
 					width: 100%;
 				}
 
-					ul.header:not(.fixed) li > * {
+					ul.actions:not(.fixed) li > * {
 						width: 100%;
 					}
 
-					ul.header:not(.fixed) li:first-child {
+					ul.actions:not(.fixed) li:first-child {
 						padding-top: 0;
 					}
 
-					ul.header:not(.fixed) li input[type="submit"],
-					ul.header:not(.fixed) li input[type="reset"],
-					ul.header:not(.fixed) li input[type="button"],
-					ul.header:not(.fixed) li button,
-					ul.header:not(.fixed) li .button {
+					ul.actions:not(.fixed) li input[type="submit"],
+					ul.actions:not(.fixed) li input[type="reset"],
+					ul.actions:not(.fixed) li input[type="button"],
+					ul.actions:not(.fixed) li button,
+					ul.actions:not(.fixed) li .button {
 						width: 100%;
 					}
 
-						ul.header:not(.fixed) li input[type="submit"].icon:before,
-						ul.header:not(.fixed) li input[type="reset"].icon:before,
-						ul.header:not(.fixed) li input[type="button"].icon:before,
-						ul.header:not(.fixed) li button.icon:before,
-						ul.header:not(.fixed) li .button.icon:before {
+						ul.actions:not(.fixed) li input[type="submit"].icon:before,
+						ul.actions:not(.fixed) li input[type="reset"].icon:before,
+						ul.actions:not(.fixed) li input[type="button"].icon:before,
+						ul.actions:not(.fixed) li button.icon:before,
+						ul.actions:not(.fixed) li .button.icon:before {
 							margin-left: -0.5rem;
 						}
 
@@ -3283,9 +3283,9 @@ input, select, textarea {
 
 		}
 
-/* mainpageduction page */
+/* Intro */
 
-	#mainpage {
+	#intro {
 		color: #ffffff;
 		padding: 8rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
@@ -3315,95 +3315,95 @@ input, select, textarea {
 		min-height: 100vh;
 	}
 
-		#mainpage input, #mainpage  select, #mainpage  textarea {
+		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
 		}
 
-		#mainpage  a {
+		#intro a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#mainpage a:hover {
+			#intro a:hover {
 				border-bottom-color: transparent;
 				color: #18bfef !important;
 			}
 
-		#mainpage  strong, #mainpage  b {
+		#intro strong, #intro b {
 			color: #ffffff;
 		}
 
-		#mainpage  h1, #mainpage  h2, #mainpage  h3, #mainpage  h4, #mainpage  h5, #mainpage  h6 {
+		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
 		}
 
-		#mainpage  blockquote {
+		#intro blockquote {
 			border-left-color: #ffffff;
 		}
 
-		#mainpage  code {
+		#intro code {
 			background: rgba(255, 255, 255, 0.075);
 			border-color: #ffffff;
 		}
 
-		#mainpage  hr {
+		#intro hr {
 			border-bottom-color: #ffffff;
 		}
 
-		#mainpage  input[type="submit"],
-		#mainpage  input[type="reset"],
-		#mainpage  input[type="button"],
-		#mainpage  button,
-		#mainpage  .button {
+		#intro input[type="submit"],
+		#intro input[type="reset"],
+		#intro input[type="button"],
+		#intro button,
+		#intro .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #ffffff;
 			color: #ffffff !important;
 		}
 
-		#mainpage  input[type="submit"]:hover,
-		#mainpage  input[type="reset"]:hover,
-		#mainpage  input[type="button"]:hover,
-		#mainpage  button:hover,
-		#mainpage  .button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
-			color: #18bfef !important;
+			#intro input[type="submit"]:hover,
+			#intro input[type="reset"]:hover,
+			#intro input[type="button"]:hover,
+			#intro button:hover,
+			#intro .button:hover {
+				box-shadow: inset 0 0 0 2px #18bfef;
+				color: #18bfef !important;
 			}
 
-		#mainpage  input[type="submit"].primary,
-		#mainpage  input[type="reset"].primary,
-		#mainpage  input[type="button"].primary,
-		#mainpage  button.primary,
-		#mainpage  .button.primary {
-			background-color: #ffffff;
-			box-shadow: none;
-			color: #1e252d !important;
+			#intro input[type="submit"].primary,
+			#intro input[type="reset"].primary,
+			#intro input[type="button"].primary,
+			#intro button.primary,
+			#intro .button.primary {
+				background-color: #ffffff;
+				box-shadow: none;
+				color: #1e252d !important;
 			}
 
-		#mainpage  input[type="submit"].primary:hover,
-		#mainpage  input[type="reset"].primary:hover,
-		#mainpage  input[type="button"].primary:hover,
-		#mainpage  button.primary:hover,
-		#mainpage  .button.primary:hover {
-			 background-color: #18bfef;
+				#intro input[type="submit"].primary:hover,
+				#intro input[type="reset"].primary:hover,
+				#intro input[type="button"].primary:hover,
+				#intro button.primary:hover,
+				#intro .button.primary:hover {
+					background-color: #18bfef;
 				}
 
-		#mainpage  h1 {
+		#intro h1 {
 			font-size: 5rem;
 			line-height: 1;
 		}
 
-		#mainpage  p {
+		#intro p {
 			font-size: 1.25rem;
 			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
 		}
 
-		#mainpage + #header {
+		#intro + #header {
 			margin-top: -20rem;
 		}
 
-			#mainpage + #header .popup {
+			#intro + #header .logo {
 				-moz-transform: translateY(2rem);
 				-webkit-transform: translateY(2rem);
 				-ms-transform: translateY(2rem);
@@ -3412,7 +3412,7 @@ input, select, textarea {
 				visibility: hidden;
 			}
 
-		#mainpage.hidden {
+		#intro.hidden {
 			pointer-events: none;
 			-moz-transform: translateY(2rem);
 			-webkit-transform: translateY(2rem);
@@ -3426,7 +3426,7 @@ input, select, textarea {
 			visibility: hidden;
 		}
 
-			#mainpage.hidden + #header .popup {
+			#intro.hidden + #header .logo {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
@@ -3435,7 +3435,7 @@ input, select, textarea {
 				visibility: visible;
 			}
 
-		body.is-preload #mainpage {
+		body.is-preload #intro {
 			-moz-transform: translateY(2rem);
 			-webkit-transform: translateY(2rem);
 			-ms-transform: translateY(2rem);
@@ -3443,7 +3443,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-			body.is-preload #mainpage:not(.hidden) + #header + #navbar {
+			body.is-preload #intro:not(.hidden) + #header + #nav {
 				-moz-transform: translateY(4rem);
 				-webkit-transform: translateY(4rem);
 				-ms-transform: translateY(4rem);
@@ -3453,16 +3453,16 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			#mainpage {
+			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
 				min-height: 90vh;
 			}
 
-				#mainpage p br {
+				#intro p br {
 					display: none;
 				}
 
-				#mainpage + #header {
+				#intro + #header {
 					margin-top: -14rem;
 				}
 
@@ -3470,29 +3470,29 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#mainpage {
+			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
 				min-height: 80vh;
 			}
 
-				#mainpage h1 {
+				#intro h1 {
 					font-size: 3.25rem;
 					line-height: 1.1;
 					margin-bottom: 1rem;
 				}
 
-				#mainpage p {
+				#intro p {
 					font-size: 1rem;
 					margin-top: 0rem;
 				}
 
-				#mainpage .header {
+				#intro .actions {
 					display: none;
 				}
 
 		}
 
-/* header */
+/* Header */
 
 	#header {
 		color: #ffffff;
@@ -3559,7 +3559,7 @@ input, select, textarea {
 			border-bottom-color: #ffffff;
 		}
 
-		#header .popup {
+		#header .logo {
 			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
 			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
 			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
@@ -3578,7 +3578,7 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-			#header .popup:hover {
+			#header .logo:hover {
 				border-color: #18bfef !important;
 				color: #18bfef !important;
 			}
@@ -3598,16 +3598,16 @@ input, select, textarea {
 				padding-bottom: 3rem;
 			}
 
-				#header .popup {
+				#header .logo {
 					font-size: 1.75rem;
 					border-width: 3px !important;
 				}
 
 		}
 
-/* navbar */
+/* Nav */
 
-	#navbar {
+	#nav {
 		color: #ffffff;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3629,58 +3629,58 @@ input, select, textarea {
 		z-index: 2;
 	}
 
-		#navbar ul.divided li {
+		#nav ul.divided li {
 			border-top-color: #ffffff;
 		}
 
-		#navbar ul.icons li a.icon:hover:before {
+		#nav ul.icons li a.icon:hover:before {
 			color: #18bfef;
 		}
 
-		#navbar ul.icons.alt li .icon:before {
+		#nav ul.icons.alt li .icon:before {
 			box-shadow: inset 0 0 0 2px #ffffff;
 		}
 
-		#navbar ul.icons.alt li a.icon:hover:before {
+		#nav ul.icons.alt li a.icon:hover:before {
 			box-shadow: inset 0 0 0 2px #18bfef;
 		}
 
-		#navbar input, #navbar select, #navbar textarea {
+		#nav input, #nav select, #nav textarea {
 			color: #ffffff;
 		}
 
-		#navbar a {
+		#nav a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#navbar a:hover {
+			#nav a:hover {
 				border-bottom-color: transparent;
 				color: #18bfef !important;
 			}
 
-		#navbar strong, #navbar b {
+		#nav strong, #nav b {
 			color: #ffffff;
 		}
 
-		#navbar h1, #navbar h2, #navbar h3, #navbar h4, #navbar h5, #navbar h6 {
+		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
 			color: #ffffff;
 		}
 
-		#navbar blockquote {
+		#nav blockquote {
 			border-left-color: #ffffff;
 		}
 
-		#navbar code {
+		#nav code {
 			background: rgba(255, 255, 255, 0.075);
 			border-color: #ffffff;
 		}
 
-		#navbar hr {
+		#nav hr {
 			border-bottom-color: #ffffff;
 		}
 
-		#navbar ul.pagetabs {
+		#nav ul.links {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3702,12 +3702,12 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			#navbar ul.pagetabs li {
+			#nav ul.links li {
 				display: block;
 				padding-left: 0;
 			}
 
-				#navbar ul.pagetabs li a {
+				#nav ul.links li a {
 					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3718,24 +3718,24 @@ input, select, textarea {
 					padding: 0 2rem;
 				}
 
-					#navbar ul.pagetabs li a:hover {
+					#nav ul.links li a:hover {
 						color: inherit !important;
 						background-color: rgba(255, 255, 255, 0.1);
 					}
 
-				#navbar ul.pagetabs li.active {
+				#nav ul.links li.active {
 					background-color: #ffffff;
 				}
 
-					#navbar ul.pagetabs li.active a {
+					#nav ul.links li.active a {
 						color: #1e252d;
 					}
 
-						#navbar ul.pagetabs li.active a:hover {
+						#nav ul.links li.active a:hover {
 							color: #18bfef !important;
 						}
 
-		#navbar ul.icons {
+		#nav ul.icons {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;
 			-ms-flex-grow: 0;
@@ -3749,15 +3749,15 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			#navbar {
+			#nav {
 				display: none;
 			}
 
 		}
 
-/* structure */
+/* Main */
 
-	#structure {
+	#main {
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
@@ -3766,41 +3766,41 @@ input, select, textarea {
 		z-index: 2;
 	}
 
-		#structure > * {
+		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
 
-			#structure > *:first-child {
+			#main > *:first-child {
 				border-top: 0;
 			}
 
-		#structure > footer {
+		#main > footer {
 			text-align: center;
 		}
 
-		#structure > .post {
+		#main > .post {
 			padding: 8rem 8rem 6rem 8rem ;
 		}
 
-			#structure > .post header.major > .date {
+			#main > .post header.major > .date {
 				margin-top: -2rem;
 			}
 
-			#structure > .post header.major > h1, #structure > .post header.major h2 {
+			#main > .post header.major > h1, #main > .post header.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
 
-			#structure > .post.featured {
+			#main > .post.featured {
 				text-align: center;
 			}
 
 			@media screen and (max-width: 1280px) {
 
-				#structure > .post {
+				#main > .post {
 					padding: 6rem 4rem 4rem 4rem ;
 				}
 
@@ -3808,16 +3808,16 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#structure > .post {
+				#main > .post {
 					padding: 4rem 2rem 2rem 2rem ;
 				}
 
-					#structure > .post header.major > .date {
+					#main > .post header.major > .date {
 						margin-top: -1rem;
 						margin-bottom: 2rem;
 					}
 
-					#structure > .post header.major > h1, #structure > .post header.major h2 {
+					#main > .post header.major > h1, #main > .post header.major h2 {
 						font-size: 2.5rem;
 						line-height: 1.2;
 						margin: 0 0 1.5rem 0;
@@ -3825,7 +3825,7 @@ input, select, textarea {
 
 			}
 
-		#structure > .posts {
+		#main > .posts {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3843,7 +3843,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
-			#structure > .posts > * {
+			#main > .posts > * {
 				-moz-flex-shrink: 1;
 				-webkit-flex-shrink: 1;
 				-ms-flex-shrink: 1;
@@ -3854,16 +3854,16 @@ input, select, textarea {
 				flex-grow: 0;
 			}
 
-			#structure > .posts > * {
+			#main > .posts > * {
 				width: 50%;
 			}
 
-			#structure > .posts > * {
+			#main > .posts > * {
 				padding: 4rem;
 				width: 50%;
 			}
 
-			#structure > .posts > article {
+			#main > .posts > article {
 				border-color: #eeeeee;
 				border-left-width: 2px;
 				border-style: solid;
@@ -3871,25 +3871,25 @@ input, select, textarea {
 				text-align: center;
 			}
 
-				#structure > .posts > article > :last-child {
+				#main > .posts > article > :last-child {
 					margin-bottom: 0;
 				}
 
-				#structure > .posts > article:nth-child(2n - 1) {
+				#main > .posts > article:nth-child(2n - 1) {
 					border-left-width: 0;
 				}
 
-				#structure > .posts > article:nth-child(-n + 2) {
+				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				}
 
 			@media screen and (max-width: 980px) {
 
-				#structure > .posts > * {
+				#main > .posts > * {
 					width: 50%;
 				}
 
-				#structure > .posts > * {
+				#main > .posts > * {
 					padding: 2.5rem;
 					width: 50%;
 				}
@@ -3898,32 +3898,32 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#structure > .posts > * {
+				#main > .posts > * {
 					width: 100%;
 				}
 
-				#structure > .posts > * {
+				#main > .posts > * {
 					padding: 2rem;
 					width: 100%;
 				}
 
-				#structure > .posts > article:nth-child(2n - 1) {
+				#main > .posts > article:nth-child(2n - 1) {
 					border-left-width: 2px;
 				}
 
-				#structure > .posts > article:nth-child(-n + 2) {
+				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 2px;
 				}
 
-				#structure > .posts > article:nth-child(n) {
+				#main > .posts > article:nth-child(n) {
 					border-left-width: 0;
 				}
 
-				#structure > .posts > article:nth-child(-n + 1) {
+				#main > .posts > article:nth-child(-n + 1) {
 					border-top-width: 0;
 				}
 
-				#structure > .posts > article .image {
+				#main > .posts > article .image {
 					max-width: 25rem;
 					margin-left: auto;
 					margin-right: auto;
@@ -3933,7 +3933,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#structure > * {
+			#main > * {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
 
@@ -3941,7 +3941,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#structure {
+			#main {
 				width: 100%;
 			}
 
@@ -4485,7 +4485,7 @@ input, select, textarea {
 
 		}
 
-/* navbar Panel */
+/* Nav Panel */
 
 	#navPanelToggle {
 		text-decoration: none;
@@ -4579,16 +4579,16 @@ input, select, textarea {
 		z-index: 10002;
 	}
 
-		#navPanel .pagetabs {
+		#navPanel .links {
 			list-style: none;
 			padding-left: 0;
 		}
 
-			#navPanel .pagetabs li {
+			#navPanel .links li {
 				border-top: solid 2px #eeeeee;
 			}
 
-				#navPanel .pagetabs li a {
+				#navPanel .links li a {
 					border-bottom: 0;
 					display: block;
 					font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -4600,7 +4600,7 @@ input, select, textarea {
 					text-transform: uppercase;
 				}
 
-				#navPanel .pagetabs li:first-child {
+				#navPanel .links li:first-child {
 					border-top: 0;
 				}
 
@@ -4689,3 +4689,11 @@ input, select, textarea {
 		}
 
 	}
+
+
+		
+
+		
+
+				
+		
