@@ -2039,7 +2039,7 @@ input, select, textarea {
 
 /* Box */
 
-	.box {
+	/*.box {
 		border: solid 2px;
 		margin-bottom: 2rem;
 		padding: 1.5rem;
@@ -2059,7 +2059,7 @@ input, select, textarea {
 
 	.box {
 		border-color: #eeeeee;
-	}  
+	}  */
 
 /* Button */
 
