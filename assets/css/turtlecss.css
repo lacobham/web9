@@ -2241,7 +2241,7 @@ input, select, textarea {
 
 /* Form */
 
-	form {
+	/*form {
 		margin: 0 0 2rem 0;
 	}
 
@@ -2311,7 +2311,7 @@ input, select, textarea {
 						width: calc(100% - 1.5rem);
 					}
 
-		}
+		} 
 
 	label {
 		display: block;
@@ -2549,7 +2549,7 @@ input, select, textarea {
 
 	.formerize-placeholder {
 		color: #909498 !important;
-	}
+	} */
 
 /* Icon */
 
