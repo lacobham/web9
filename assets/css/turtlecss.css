@@ -3010,7 +3010,7 @@ input, select, textarea {
 		overflow-x: auto;
 	}
 
-	table {
+	/*table {
 		margin: 0 0 2rem 0;
 		width: 100%;
 	}
@@ -3100,11 +3100,11 @@ input, select, textarea {
 
 	table.alt tbody tr td {
 		border-color: #eeeeee;
-	}
+	} */
 
 /* Pagination */
 
-	.pagination {
+	/*.pagination {
 		display: -moz-inline-flex;
 		display: -webkit-inline-flex;
 		display: -ms-inline-flex;
@@ -3216,7 +3216,7 @@ input, select, textarea {
 
 	.pagination span {
 		color: #eeeeee;
-	}
+	} */
 
 /* Wrapper */
 
