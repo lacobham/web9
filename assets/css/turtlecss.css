@@ -1,16 +1,16 @@
 
 .imageHeader {
-    background-image: url ("../photos/turtles.jpg");
-    min-height: 30vh;
+    background-image: url ("photos/turtles.jpg");
+    
     background-size: cover;
     background-position: center;
 }
-/*Header classes done by April, edited by Faith*/
+
 .HeaderBoarder {
     background: #4C704C;
 }
 
-/* Header formatting - owned by April M */
+
 .header-start {
 	padding-top: 110px;
 	color: white;
