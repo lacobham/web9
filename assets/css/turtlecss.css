@@ -1,7 +1,5 @@
 
 .imageHeader {
-    background-image: url ("photos/turtles.jpg");
-    
     background-size: cover;
     background-position: center;
 }
