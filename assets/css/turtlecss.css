@@ -1,6 +1,6 @@
 
 .imageHeader {
-    background-image:"photos/turtleIn.JPG";
+    background-image: url("photos/turtleIn.jpg");
     min-height: 30vh;
     background-size: cover;
     background-position: center;
