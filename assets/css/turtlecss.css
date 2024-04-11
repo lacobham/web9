@@ -1,6 +1,6 @@
-/* Header image - owned by Faith B */
+
 .imageHeader {
-    background-image: url("photos/turtleIn.jpg");
+    background-image:"photos/turtleIn.JPG";
     min-height: 30vh;
     background-size: cover;
     background-position: center;
